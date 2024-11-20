@@ -12,9 +12,9 @@
 ![image](https://cdn.yourl.jp/image/lp/space.png)
 
 * ユーザごとのタスク管理
-  ・タスクの追加
-  ・タスクの編集
-  ・タスクの完了（削除）
+- タスクの追加
+- タスクの編集
+- タスクの完了（削除）
 ![image](https://cdn.yourl.jp/image/lp/space.png)
 
 ## More information
