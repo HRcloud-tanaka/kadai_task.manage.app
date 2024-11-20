@@ -1,0 +1,121 @@
+<style>
+    /* 全体の背景とフォントスタイル */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9ff; /* 白に近い青 */
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    /* ページタイトル */
+    h1, h2 {
+        color: #0044cc; /* 青色 */
+        border-bottom: 2px solid #0044cc;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* フォーム */
+    form {
+        background: #ffffff; /* 白背景 */
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"], select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background: #0044cc; /* 青色 */
+        color: #fff; /* 白文字 */
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    button:hover {
+        background: #003399; /* 少し暗い青 */
+    }
+
+    /* フラッシュメッセージ */
+    #flash-messages p {
+        background: #d4edda; /* 薄い緑 */
+        color: #155724; /* 緑色 */
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #c3e6cb;
+        border-radius: 5px;
+    }
+
+    /* タスクリスト */
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        background: #ffffff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    li span, li input[type="text"], li select {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    li button {
+        margin-left: 5px;
+    }
+
+    /* フォーカス時のスタイル */
+    input[type="text"]:focus, select:focus {
+        border-color: #0044cc;
+        box-shadow: 0 0 5px rgba(0, 68, 204, 0.5);
+        outline: none;
+    }
+
+    /* メディアクエリ (レスポンシブ対応) */
+    @media (max-width: 768px) {
+        li {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        li span, li input[type="text"], li select, li button {
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+</style>

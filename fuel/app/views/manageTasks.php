@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <title>タスク管理</title>
+    <link rel="stylesheet" href="/assets/css/manageTasks.css">
     <script src="https://cdn.jsdelivr.net/npm/knockout@3.5.1/build/output/knockout-latest.js"></script>
 </head>
 <body>
@@ -57,7 +58,10 @@
     </ul>
 
     <script>
-        console.log(<?= json_encode($tasks); ?>);  // タスクリストを確認
+        console.log
+        ("現在のタスク一覧をjson形式で確認します",
+        <?= json_encode($tasks); ?>
+        );  // タスクリストを確認
     </script>
 
     <script>
